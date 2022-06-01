@@ -7,13 +7,17 @@ readline.question('Enter Your Prime Number> ', number => {
     console.log(`Number ${number}`)
 
     /* START */
-    var prime = true;
+    var factors = [];
     var num = parseInt(number)
     for (var i = num-1; i > 1; i--) {
-        console.log(`${num} % ${i}`)
-        if (num % i == 0) prime = false;
+        if (num % i == 0) factors.push(i);
+    }
+
+    if(factors.length > 0) {
+        console.log(factors)
+    } else {
+        console.log('\n PRIME')
     }
     /* END */
-    if(prime) console.log('\n PRIME')
     readline.close();
 })
