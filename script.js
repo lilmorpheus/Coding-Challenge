@@ -3,7 +3,7 @@ var num_input = document.getElementById('num_input');
 var isPrime = document.getElementById('isPrime')
 var notPrime = document.getElementById('notPrime')
 
-reset();
+//reset();
 
 num_input.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {

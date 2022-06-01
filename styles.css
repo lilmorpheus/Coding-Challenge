@@ -1,0 +1,46 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+
+    margin: auto;
+    padding: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+#isPrime {
+    color: red;
+}
+#notPrime {
+    color: green;
+}
+
+input {
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
